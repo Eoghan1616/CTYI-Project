@@ -4,6 +4,8 @@
 void main()
 {
 	char input[2];
+	char First_Name[10], Last_Name[10];
+	char fullname[20];
 	char symptom1[] = "Runny or stuffy nose";
 	char symptom2[] = "Sore throat";
 	char symptom3[] = "Cough";
@@ -27,6 +29,14 @@ void main()
 
 printf("\033[1;31m");
 printf("This is MedProgram. This program will assess your health.... \n");
+printf("\033[0m");
+printf("\033[0;32m");
+printf("Enter Your First_Name: ");
+scanf("%s", First_Name);
+printf("\033[0m");
+printf("\033[1;32m");
+printf("Enter Your Last_Name: ");
+scanf("%s", Last_Name);
 printf("\033[0m");
 printf("\033[0;31m");
 printf("Are you currently feeling unwell[y/n]? ");
@@ -230,6 +240,11 @@ printf("If your child is in pain or has a fever, you can give them a mild painki
 					}
 					}
 			}
+{ 
+printf("\033[0;35m");
+printf("Thank you for using MedProgram: %s %s \n", First_Name, Last_Name);
+printf("\033[0m");
+}
 			break;
 		
 
