@@ -39,7 +39,7 @@ printf("Enter Your Last_Name: ");
 scanf("%s", Last_Name);
 printf("\033[0m");
 printf("\033[0;31m");
-printf("Are you currently feeling unwell[y/n]? ");
+printf("Are you currently feeling unwell[y/n]❓ ");
 printf("\033[0m");
 char answer[10];
 scanf("%s", answer);
@@ -50,37 +50,38 @@ printf("You entered %s \n", answer);
 	{
 		case 'n':
 			printf("\033[01;33m");
-			printf("That is great. Have a nice day!\n");
+			printf("That is great. Have a nice day %s %s 😀 ✅  \n", First_Name, Last_Name);
 			printf("\033[0m");
 			break;
 
 		case 'y':
 			printf("The program will now assess your health...\n");
-			printf("Do you have a Headache[y/n]? ");
+			printf("Do you have a Headache[y/n]❓ ");
 			char answer[10];
 			scanf("%s", answer);
 			printf("You entered %s\n", answer);
 
 			if(strcmp(answer, "y")==0)
 			{
-				printf("Do you have Muscle Aches[y/n]? ");
+				printf("Do you have Muscle Aches[y/n]❓ ");
 				scanf("%s", answer);
 				printf("You entered %s\n", answer);
 
 				if(strcmp(answer, "y")==0)
 				{
-					printf("Do you have a Loss of Appetite[y/n]? ");
+					printf("Do you have a Loss of Appetite[y/n]❓ ");
 					scanf("%s", answer);
 					printf("You entered %s\n", answer);
 
 					if(strcmp(answer, "y")==0){
-						printf("Are you experiencing pain in swollen salivary glands[y/n]? ");
+						printf("Are you experiencing pain in swollen salivary glands[y/n]❓ ");
 						scanf("%s", answer);
 						printf("You entered %s\n", answer);
 						
 						if(strcmp(answer, "y")==0){
 							printf("\033[0;34m");
-							printf("You may have mumps!\n");
+							printf("You may have mumps🤒 ‼\n");
+ ;
 							printf("\033[0m");
 							printf("\033[1;36m"); // Color all the following printf statements to this color
 							printf("EXPLANATION: ");
@@ -92,7 +93,7 @@ printf("You entered %s \n", answer);
  							printf("Rest as much as possible. Take painkillers such as paracetamol and ibuprofen regularly. You should arrange a doctors appointment as soon as possible!\n");
 						} else if(strcmp(answer, "n")==0) {
 							printf("\033[0;34m");
-							printf("You may have chicken pox!\n");
+							printf("You may have chicken pox🤒 ‼\n");
 							printf("\033[0m");	
 							printf("\033[1;36m");
 							printf("EXPLANATION: ");
@@ -106,7 +107,7 @@ printf("If your child is in pain or has a fever, you can give them a mild painki
 						
 					} else if(strcmp(answer, "n")==0) {
 						printf("\033[0;34m");
-						printf("You may have a fever!\n");
+						printf("You may have a fever🤒 ‼\n");
 						printf("\033[0m");
 						printf("\033[1;36m");
 						printf("EXPLANATION: ");
@@ -119,13 +120,13 @@ printf("If your child is in pain or has a fever, you can give them a mild painki
 					}
 				} else if(strcmp(answer, "n")==0) 
 				{
-					printf("Do you have blurred vision[y/n]? ");
+					printf("Do you have blurred vision[y/n]❓ ");
 					scanf("%s", answer);
 					printf("You entered %s\n",  answer);
 
 					if(strcmp(answer, "y")==0){
 						printf("\033[0;34m");
-						printf("You may have a migrane!\n");
+						printf("You may have a migrane🤒 ‼\n");
 						printf("\033[0m");
 						printf("\033[1;36m");
 						printf("EXPLANATION: ");
@@ -137,7 +138,7 @@ printf("If your child is in pain or has a fever, you can give them a mild painki
 						printf("If you regularly have signs and symptoms of a migraine, keep a record of your attacks and how you treated them. Then make an appointment with your doctor to discuss your headaches. Medications can help prevent some migraines and make them less painful.\n");
 					} else if(strcmp(answer, "n")==0) {
 						printf("\033[0;34m");
-						printf("You may have the flu!\n");
+						printf("You may have the flu🤒 ‼\n");
 						printf("\033[0m");
 						printf("\033[1;36m");
 						printf("EXPLANATION: ");
@@ -151,19 +152,19 @@ printf("If your child is in pain or has a fever, you can give them a mild painki
 				}		
 			} else if(strcmp(answer, "n")==0)	
 			{
-				printf("Do you have enlarged lymph nodes in your neck[y/n]? ");
+				printf("Do you have enlarged lymph nodes in your neck[y/n]❓ ");
 				scanf("%s", answer);
 				printf("You entered %s\n", answer);
 			
 				if(strcmp(answer, "y")==0){
-					printf("Are you experiencing extreme tiredness[y/n]? ");
+					printf("Are you experiencing extreme tiredness[y/n]❓ ");
 					scanf("%s", answer);
 					printf("You entered %s\n", answer);
 					
 					if(strcmp(answer, "y")==0)
 					{
 						printf("\033[0;34m");
-						printf("You may have glandular fever!\n");
+						printf("You may have glandular fever🤒 ‼\n");
 						printf("\033[0m");
 						printf("\033[1;36m");
 						printf("EXPLANATION: ");
@@ -175,47 +176,47 @@ printf("If your child is in pain or has a fever, you can give them a mild painki
 						printf("If you think that you may have glandular fever you should make a doctors appointment as soon as possible. Your doctor will take a blood test to confirm whether your symptoms are due to glandular fever. As glandular fever is a viral infection, antibiotics are ineffective against the disease. Take plenty of rest, especially during the acute part of the illness.\n");
 					} else if(strcmp(answer, "n")==0)
 					{
-						printf("Do you have red spots on the hard or soft palate at the back of the roof of your mouth[y/n]? ");
+						printf("Do you have red spots on the hard or soft palate at the back of the roof of your mouth[y/n]❓ ");
 						scanf("%s", answer);
 						printf("You entered %s\n", answer);
 						
 						if(strcmp(answer, "y")==0){
 							printf("\033[0;34m");
-							printf("You may have tonsilitis!\n");
+							printf("You may have a strep throat🤒 ‼\n");
 							printf("\033[0m");
 							printf("\033[1;36m");
 							printf("EXPLANATION: ");
 							printf("\033[0m");
-							printf("Tonsillitis is inflammation of the tonsils, two oval-shaped pads of tissue at the back of the throat. \n");
-							printf("\033[1;34m");
-							printf("ADVICE: ");
-							printf("\033[0m");
-							printf("If you think that you may have tonsilitis you should make a doctors appointment as soon as possible. Antibiotics can be used to treat bacterial tonsillitis but not viral tonsilitis. You can take paracetamol or ibuprofen to ease symptoms such as pain, headaches and fever.\n");
-						} else if(strcmp(answer, "n")==0) {
-							printf("\033[0;34m");
-							printf("You may have a strep throat!\n");
-							printf("\033[0m");
-							printf("\033[1;36m");
-							printf("EXPLANATION: ");
-							printf("\033[0m");
-							printf("Strep throat is a bacterial infection that can make your throat feel sore and scratchy. It is caused by the bacteria known as Streptococcus pyogenes.\n");
+							printf("Strep throat is a bacterial infection that can make your throat feel sore and scratchy. It is caused by the bacteria known as Streptococcus pyogenes.Ton \n");
 							printf("\033[1;34m");
 							printf("ADVICE: ");
 							printf("\033[0m");
 							printf("If you think that you may have strep throat you should make a doctors appointment as soon as possible. A doctor can perform a rapid antigen or a throat culture test to see if you have strp throat. If you do have strep throat, your doctor may give you an antibiotic prescription. Lots of rest will help your bodie's fight against the infection.\n");
+						} else if(strcmp(answer, "n")==0) {
+							printf("\033[0;34m");
+							printf("You may have tonsilitis🤒 ‼\n");
+							printf("\033[0m");
+							printf("\033[1;36m");
+							printf("EXPLANATION: ");
+							printf("\033[0m");
+							printf("Tonsillitis is inflammation of the tonsils, two oval-shaped pads of tissue at the back of the throat.\n");
+							printf("\033[1;34m");
+							printf("ADVICE: ");
+							printf("\033[0m");
+							printf("If you think that you may have tonsilitis you should make a doctors appointment as soon as possible. Antibiotics can be used to treat bacterial tonsillitis but not viral tonsilitis. You can take paracetamol or ibuprofen to ease symptoms such as pain, headaches and fever.\n");
 
 						}
 					}
 					
 					
 				} else if(strcmp(answer, "n")==0) {
-					printf("Are you experiencing congestion[y/n]? ");
+					printf("Are you experiencing congestion[y/n]❓ ");
 					scanf("%s", answer);
 					printf("You entered %s\n", answer);
 				
 					if(strcmp(answer, "y")==0){
 						printf("\033[0;34m");
-						printf("You may have a cold!\n");
+						printf("You may have a cold🤒 ‼\n");
 						printf("\033[0m");
 						printf("\033[1;36m");
 						printf("EXPLANATION: ");
@@ -227,7 +228,7 @@ printf("If your child is in pain or has a fever, you can give them a mild painki
 						printf("You generally do not need to go to the doctor when you have a cold. There are many ways of treating a common cold including: Drinking plenty of fluids, takings plenty of naps, gargling, using vapor rubs and eating menthol sweets.\n");
 					} else if(strcmp(answer, "n")==0) {
 						printf("\033[0;34m");
-						printf("You may have food poisoning!\n");
+						printf("You may have food poisoning🤒 ‼\n");
 						printf("\033[0m");
 						printf("\033[1;36m");
 						printf("EXPLANATION: ");
@@ -242,7 +243,7 @@ printf("If your child is in pain or has a fever, you can give them a mild painki
 			}
 { 
 printf("\033[0;35m");
-printf("Thank you for using MedProgram: %s %s \n", First_Name, Last_Name);
+printf("Thank you for using MedProgram %s %s 😀 ✅ \n", First_Name, Last_Name);
 printf("\033[0m");
 }
 			break;
